@@ -118,7 +118,7 @@ footer p {
     }
 
     h1 {
-        font-size: 1rem;
+        font-size: 24px;
     }
 
     p,
@@ -147,6 +147,9 @@ footer p {
         font-size: 1.3rem;
     }
 
+    h1 {
+        font-size: 20px;
+    }
     p,
     ul {
         font-size: 0.95rem;
