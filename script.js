@@ -1,13 +1,12 @@
-// ANIMAÇÃO AO ROLAR (fade-in)
 const sections = document.querySelectorAll("section");
 
 function showSections() {
     const triggerBottom = window.innerHeight * 0.85;
 
     sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
+        const top = section.getBoundingClientRect().top;
 
-        if (sectionTop < triggerBottom) {
+        if (top < triggerBottom) {
             section.classList.add("show");
         }
     });
@@ -16,7 +15,7 @@ function showSections() {
 window.addEventListener("scroll", showSections);
 showSections();
 
-// BOTÃO VOLTAR AO TOPO
+// BOTÃO TOPO
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
@@ -28,8 +27,5 @@ window.addEventListener("scroll", () => {
 });
 
 topBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
