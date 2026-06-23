@@ -95,3 +95,7 @@ section.show {
 footer {
     text-align: center;
 }
+
+iframe{
+    height: 70%;
+}
